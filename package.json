@@ -1,0 +1,15 @@
+{
+  "name": "hono-template",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "db:push": "drizzle-kit push",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "dependencies": {
+    "hono": "^4.7.8"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
