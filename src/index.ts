@@ -29,7 +29,9 @@ app.get(
       },
       servers: [
         {
-          url: Bun.env.APP_URL || "http://127.0.0.1:8080",
+          url: Bun.env.APP_URL
+            ? "https://" + Bun.env.APP_URL
+            : "http://127.0.0.1:8080",
           description: "Server",
         },
       ],
